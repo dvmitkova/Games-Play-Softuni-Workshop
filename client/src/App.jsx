@@ -5,7 +5,7 @@ import Home from './components/home/Home'
 import Login from './components/login/Login'
 import Register from './components/register/Register'
 import GameCreate from './components/game-create/GameCreate'
-import GamesList from './components/catalog/GamesList'
+import GamesList from './components/games-list/GamesList'
 
 function App() {
 

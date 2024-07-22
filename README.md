@@ -19,6 +19,9 @@
 - [x] Service layer architecture - feature based / function based
 - [x] Abstract requester - single endpoint fetcher
 - [x] Add games api
+- [x] Preseed practice server - after creating games in postman, copy the objects and paste them in a new file in server/data
 
 ## 4. Page Implementations
 - [ ] Game list
+- [ ] Details
+- [ ] Home
