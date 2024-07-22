@@ -9,8 +9,15 @@
 - [x] Convert html to jsx
 - [x] Separate html into components
 
- ## 2. React Router
+## 2. React Router
 - [x] Install react-router-dom
 - [x] Setup react-router-dom
 - [x] Add routes in App.jsx
 - [x] Add links in navigation
+  
+## 3. Create Service Layer
+- [x] Service layer architecture - feature based / function based
+- [x] Abstract requester - single endpoint fetcher
+
+## 4. Page Implementations
+- [ ] Game list
