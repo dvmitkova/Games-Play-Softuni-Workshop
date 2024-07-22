@@ -18,6 +18,7 @@
 ## 3. Create Service Layer
 - [x] Service layer architecture - feature based / function based
 - [x] Abstract requester - single endpoint fetcher
+- [x] Add games api
 
 ## 4. Page Implementations
 - [ ] Game list
