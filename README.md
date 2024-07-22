@@ -22,6 +22,17 @@
 - [x] Preseed practice server - after creating games in postman, copy the objects and paste them in a new file in server/data
 
 ## 4. Page Implementations
-- [ ] Game list
-- [ ] Details
-- [ ] Home
+- [x] Game list
+- [x] Details 
+    - Details link
+    - Details route
+    - API function - getOne
+- [x] Home - Latest Games
+
+## 5. Comments
+- [x] Create service for nested resource comments
+- [x] Post comment to server
+- [x] Read comments from server
+- [x] Add comments in the component
+- [ ] Clear form
+

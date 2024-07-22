@@ -1,25 +1,27 @@
-import { useEffect, useState } from 'react';
-import * as gamesAPI from '../../api/gamesAPI';
-import GamesListItem from './games-list-item/GamesListItem';
+import { useEffect, useState } from 'react'; //node-modules frameworks
+
+import * as gamesAPI from '../../api/gamesAPI'; //utils/services - non-component files
+
+import GamesListItem from './games-list-item/GamesListItem';//component files
 
 export default function GamesList() {
     const [games, setGames] = useState([]);
 
-    useEffect(() => {
-        gamesAPI.getAll()
-            .then(result => setGames(result));
+    useEffect(() => {//! НЕ ПРИЕМА ПРОМИС
+        (async () => {
+            const result = await gamesAPI.getAll();
+
+            setGames(result);
+        })();
     }, []);
 
     return (
         <section id="catalog-page">
         <h1>All Games</h1>
-        {/* <!-- Display div: with information about every game (if any) --> */}
-
-   
-            {games.map(game => <GamesListItem key={game._id} {...game} />)}
-            
-        {/* <!-- Display paragraph: If there is no games  --> */}
-        <h3 className="no-articles">No articles yet</h3>
+            {games.length > 0
+                ? games.map(game => <GamesListItem key={game._id} {...game} />)
+                : <h3 className="no-articles">No games yet</h3>
+            }
     </section>
     )
 }
