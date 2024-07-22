@@ -29,10 +29,10 @@
     - API function - getOne
 - [x] Home - Latest Games
 
-## 5. Comments
+## 5. Comments (Advanced)
 - [x] Create service for nested resource comments
 - [x] Post comment to server
 - [x] Read comments from server
 - [x] Add comments in the component
-- [ ] Clear form
+- [x] Clear form
 
